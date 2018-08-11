@@ -1,6 +1,6 @@
 # Sample Data
 
-Download sample data of Theme Unit Test, WooCommerce, bbPress etc with one click.
+Download sample data of Theme Unit Test, WooCommerce, bbPress etc with one click. [Quick download](https://github.com/maheshwaghmare/sample-data/archive/master.zip)  plugin.
 
 ### Quick Video
 
