@@ -1,0 +1,137 @@
+.sample-data > p {
+    margin-top: 0;
+}
+
+.sample-data .grid .item:nth-child(odd) {
+    clear: both;
+    margin-left: 0;
+}
+
+.sample-data .grid .item:nth-child(even) {
+    margin-right: 0;
+}
+
+.sample-data .item .desc p {
+    margin: 0 0 1em;
+}
+
+.sample-data .item img {
+    max-width: 90px;
+    margin-right: 1.5em;
+}
+
+.sample-data .grid .item {
+    float: left;
+    margin: 0 8px 16px;
+    width: 48.5%;
+    width: calc( 50% - 8px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 2em 2em 2em 2em;
+    display: flex;
+    align-items: flex-start;
+}
+
+.sample-data .item .desc p:last-child {
+    margin-bottom: 0;
+}
+
+.sample-data .grid h3 {
+    margin-top: 0;
+}
+
+.sample-data .grid a {
+    text-decoration: none;
+}
+
+.sample-data .welcome-panel {
+    margin-top: 0;
+}
+
+.sample-data .welcome-panel h3 {
+    margin-top: .5em;
+}
+
+.sample-data #post-body-content .themes .title,
+.sample-data #post-body-content .plugins .title {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.3em;
+    margin: .51em 0;
+}
+
+.sample-data #post-body-content .plugins .title {
+    padding-top: 0;
+    margin: 0 0 .51em 0;
+}
+
+.sample-data li {
+    list-style-type: disc;
+}
+
+.sample-data ul {
+    padding-left: 1em;
+    margin-left: 1em;
+}
+
+.sample-data .process-import {
+    margin-bottom: 2em;
+}
+
+.sample-data #import-log,
+.sample-data #loaded-import-content,
+.sample-data #importer-screen {
+    display: none;
+}
+
+.sample-data #import-log {
+    margin: 2em 0;
+}
+
+.sample-data #loading-import-content {
+    padding: 2em 1em 3em 1em;
+    text-align: center;
+}
+
+.sample-data #loading-import-content .spinner {
+    margin-top: 2em;
+    float: none;
+}
+
+.sample-data #loading-import-content p {
+    font-size: 1.3em;
+}
+
+.sample-data #loading-import-content small {
+    font-size: .8rem;
+}
+
+.sample-data .progress #progressbar-total {
+    width: 100%;
+}
+
+.sample-data .import-status-indicator {
+    display: flex;
+    padding: 1em 0 .5em 0;
+    display: none;
+    margin-top: -1em;
+}
+
+.sample-data .process {
+    flex: 1;
+}
+
+.sample-data .import-status-indicator>.progress {
+    flex: 1;
+    padding-right: 1em;
+}
+
+.sample-data .status {
+    font-weight: bold;
+}
+
+.sample-data .import-status {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
