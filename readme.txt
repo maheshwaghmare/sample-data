@@ -1,6 +1,6 @@
 === Sample Data ===
 Contributors: Mahesh901122
-Tags: dummy data, sample data, woocommerce dummy data, bb dummy data, theme unit test data
+Tags: dummy data, sample data, woocommerce dummy data, bbpress dummy data, theme unit test data
 Donate link: https://www.paypal.me/mwaghmare7/
 Tested up to: 4.8.1
 Stable tag: 1.0.0
