@@ -4,6 +4,8 @@ Download sample data of Theme Unit Test, WooCommerce, bbPress etc with one click
 
 ### Quick Video
 
+_Click on the image to see the video._
+
 [![Sample Data](https://img.youtube.com/vi/q77CJDKAnmg/0.jpg)](https://www.youtube.com/watch?v=q77CJDKAnmg)
 
 Follow below simple steps to improt the dummy content:
