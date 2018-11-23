@@ -78,7 +78,9 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 			$data = array(
 				'ajaxurl'        => esc_url( admin_url( 'admin-ajax.php' ) ),
 				'importWarning'  => __( "Ready to Import!\n\nDo you want to import the data?\n\nClick 'Ok' to start the import.\nClick 'Cancel' to exit.", 'sample-data' ),
+				'importStarted' => __( 'Import started!', 'sample-data' ),
 				'importComplete' => __( 'Import complete!', 'sample-data' ),
+				'importingText' => __( 'Importing..', 'sample-data' ),
 			);
 
 			wp_localize_script( 'data-importer-js', 'SampleDataVars', $data );

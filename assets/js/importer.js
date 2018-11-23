@@ -123,8 +123,12 @@
 			$("#import-log").slideDown();
 			$(".import-status-indicator").slideDown();
 
-			$('#loaded-import-content').prepend( '<div class="notice notice-info"><p>Import started!</p></div>' );
+			$('#loaded-import-content').prepend( '<div class="notice notice-info"><p>'+SampleDataVars.importStarted+'</p></div>' );
 			$(".import-status-indicator").slideDown();
+
+			var btn = $(this);
+			
+			btn.addClass( 'updating-message' ).text( SampleDataVars.importingText );
 
 			var evtSource = new EventSource( SampleDataSSEImport.data.url );
 			evtSource.onmessage = function ( message ) {
@@ -137,6 +141,8 @@
 					case 'complete':
 						evtSource.close();
 
+						btn.addClass( 'disabled' ).removeClass( 'start-import updating-message' ).text( SampleDataVars.importComplete );
+						
 						$('.back-to-importer-content').remove();
 						$('#loaded-import-content').find( '.notice' ).remove();
 						$('#loaded-import-content').prepend( '<div class="notice notice-success"><p>'+SampleDataVars.importComplete+'</p></div>' );
