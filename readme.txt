@@ -2,7 +2,7 @@
 Contributors: Mahesh901122
 Tags: dummy data, sample data, woocommerce dummy data, bbpress dummy data, theme unit test data
 Donate link: https://www.paypal.me/mwaghmare7/
-Tested up to: 4.8.1
+Tested up to: 4.9.8
 Stable tag: 1.0.1
 Requires at least: 4.4
 
