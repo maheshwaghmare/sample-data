@@ -22,7 +22,7 @@ Plugin import the data form the XML file. For now plugin added in-build support 
 
 Do you want another plugin support?
 
-[Request for support »](https://maheshwaghmare.wordpress.com/customization-request/)
+[Request for support »](https://maheshwaghmare.wordpress.com/say-hello/)
 
 
 Extend on [Github](https://github.com/maheshwaghmare/sample-data/)
