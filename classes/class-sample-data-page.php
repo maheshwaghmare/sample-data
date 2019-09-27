@@ -114,6 +114,7 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 							<div id="post-body-content">
 
 								<div id="importer-content">
+
 									<div class="plugins">
 
 										<h2 class="title"><?php _e( 'Plugins', 'sample-data' ); ?></h2>
@@ -127,8 +128,14 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 													</div>
 													<div class="desc column-description">
 														<p><?php _e( 'WooCommerce is a powerful, extendable eCommerce plugin that helps you sell anything. Beautifully.', 'sample-data' ); ?></p>
-														<?php if( class_exists('WooCommerce') ) { ?>
-															<p><a href='#' class="get-started" data-file="<?php echo esc_attr( SAMPLE_DATA_DIR . 'data\woocommerce-sample_products.xml' ); ?>"><i><?php _e( 'Get Started »', 'sample-data' ); ?></i></a></p>
+														<?php if ( class_exists( 'WooCommerce' ) ) {
+															if( defined( 'WC_ABSPATH' ) ) {
+																$woo_xml_url = WC_ABSPATH . 'sample-data\sample_products.xml';
+															} else {
+																$woo_xml_url = SAMPLE_DATA_DIR . 'data\woocommerce-sample_products.xml';
+															}
+															?>
+															<p><a href='#' class="get-started" data-file="<?php echo esc_attr( $woo_xml_url ); ?>"><i><?php _e( 'Get Started »', 'sample-data' ); ?></i></a></p>
 														<?php } else { ?>
 															<p><a href='<?php echo admin_url( 'plugin-install.php?s=woocommerce&tab=search&type=term', 'sample-data' ); ?>'><i><?php _e( 'Install & Activate »', 'sample-data' ); ?></i></a></p>
 														<?php } ?>
@@ -143,7 +150,7 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 													</div>
 													<div class="desc column-description">
 														<p><?php _e( 'bbPress is forum software, made the WordPress way.', 'sample-data' ); ?></p>
-														<?php if( class_exists('bbPress') ) { ?>
+														<?php if ( class_exists( 'bbPress' ) ) { ?>
 															<p><a href='#' class="get-started" data-file="<?php echo esc_attr( SAMPLE_DATA_DIR . 'data\bbpress-unit-test-data.xml' ); ?>"><i><?php _e( 'Get Started »', 'sample-data' ); ?></i></a></p>
 														<?php } else { ?>
 															<p><a href='<?php echo admin_url( 'plugin-install.php?s=bbpress&tab=search&type=term', 'sample-data' ); ?>'><i><?php _e( 'Install & Activate »', 'sample-data' ); ?></i></a></p>

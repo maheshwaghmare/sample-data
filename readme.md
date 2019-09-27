@@ -22,7 +22,7 @@ Plugin import the data form the XML file. For now plugin added in-build support 
 
 Do you want another plugin support?
 
-[Request for support »](https://maheshwaghmare.wordpress.com/say-hello/)
+[Request for support »](https://maheshwaghmare.wordpress.com/customization-request/)
 
 
 Extend on [Github](https://github.com/maheshwaghmare/sample-data/)
@@ -36,6 +36,9 @@ Extend on [Github](https://github.com/maheshwaghmare/sample-data/)
 
 
 ### Changelog
+
+= 1.0.1 =
+* Used WooCommerce plugins directory XML file instead of custom XML file.
 
 = 1.0.0 =
 * Initial release.
