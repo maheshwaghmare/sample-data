@@ -3,7 +3,7 @@ Contributors: Mahesh901122
 Tags: dummy data, sample data, woocommerce dummy data, bbpress dummy data, theme unit test data
 Donate link: https://www.paypal.me/mwaghmare7/
 Tested up to: 5.2
-Stable tag: 1.0.1
+Stable tag: 1.1.0
 Requires at least: 4.4
 
 Download sample data of Theme Unit Test, WooCommerce, bbPress etc with one click.
@@ -39,8 +39,12 @@ Do you know coding? Let's fork & extend from [Github](https://github.com/maheshw
 
 == Changelog ==
 
+= 1.1.0 =
+* New: Added filter `sample_data_action_links` to change the action links.
+* New: Added filter `sample_data_localize_vars` to change the localize variables.
+
 = 1.0.1 =
-* Used WooCommerce plugins directory XML file instead of custom XML file.
+* Fix: Used WooCommerce plugins directory XML file instead of custom XML file.
 
 = 1.0.0 =
 * Initial release.

@@ -57,9 +57,9 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 		 * @return  array
 		 */
 		function action_links( $links ) {
-			$action_links = array(
+			$action_links = apply_filters( 'sample_data_action_links', array(
 				'settings' => '<a href="' . admin_url( 'tools.php?page=sample-data' ) . '" aria-label="' . esc_attr__( 'Get Started', 'sample-data' ) . '">' . esc_html__( 'Get Started', 'sample-data' ) . '</a>',
-			);
+			));
 
 			return array_merge( $action_links, $links );
 		}
@@ -75,13 +75,13 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 			wp_enqueue_script( 'data-importer-js', SAMPLE_DATA_URI . 'assets/js/importer.js', array( 'jquery', 'wp-util', 'updates' ), SAMPLE_DATA_VER, true );
 			wp_enqueue_style( 'data-importer-css', SAMPLE_DATA_URI . 'assets/css/importer.css', array(), SAMPLE_DATA_VER, 'all' );
 
-			$data = array(
+			$data = apply_filters( 'sample_data_localize_vars', array(
 				'ajaxurl'        => esc_url( admin_url( 'admin-ajax.php' ) ),
 				'importWarning'  => __( "Ready to Import!\n\nDo you want to import the data?\n\nClick 'Ok' to start the import.\nClick 'Cancel' to exit.", 'sample-data' ),
 				'importStarted' => __( 'Import started!', 'sample-data' ),
 				'importComplete' => __( 'Import complete!', 'sample-data' ),
 				'importingText' => __( 'Importing..', 'sample-data' ),
-			);
+			));
 
 			wp_localize_script( 'data-importer-js', 'SampleDataVars', $data );
 		}
