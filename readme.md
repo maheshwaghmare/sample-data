@@ -36,6 +36,21 @@ Do you know coding? Let's fork & extend from [Github](https://github.com/maheshw
 3. Select the `Get Started »` for Plugin/Theme.
 4. Click on `Start Import`.
 
+== Frequently Asked Questions ==
+
+= Is there any plan for Pro version? =
+
+Nope, For now We have not thinking about any pro plan for Sample Data plugin.
+
+= What kind of data I can import?
+
+We provides the sample data of Theme unit test which contain post, pages, attachments etc. Mostly this data is used for testing purpose. These data includes the different variations of the test cases.
+
+And plugins sample data which includes some popular plugins such as WooCommerce, BBPress etc.
+
+= Can I request for any theme/plugin sample data? =
+
+Yes, But theme or plugin author have such sample data which we can include in our importer. Once they have provided such data then we will add it into our importer.
 
 == Changelog ==
 
