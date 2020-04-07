@@ -58,7 +58,7 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 		 */
 		function action_links( $links ) {
 			$action_links = apply_filters( 'sample_data_action_links', array(
-				'settings' => '<a href="' . admin_url( 'tools.php?page=sample-data' ) . '" aria-label="' . esc_attr__( 'Get Started', 'sample-data' ) . '">' . esc_html__( 'Get Started', 'sample-data' ) . '</a>',
+				'settings' => '<a href="' . admin_url( 'tools.php?page=sample-data' ) . '" aria-label="' . esc_attr__( 'Import Content', 'sample-data' ) . '">' . esc_html__( 'Import Content', 'sample-data' ) . '</a>',
 			));
 
 			return array_merge( $action_links, $links );
@@ -93,7 +93,7 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 		 * @return void
 		 */
 		function register_admin_menu() {
-			add_submenu_page( 'tools.php', __( 'Sample Data', 'sample-data' ), __( 'Sample Data', 'sample-data' ), 'manage_options', 'sample-data', array( $this, 'options_page' ) );
+			add_submenu_page( 'tools.php', __( 'Site Demo Content', 'sample-data' ), __( 'Site Demo Content', 'sample-data' ), 'manage_options', 'sample-data', array( $this, 'options_page' ) );
 		}
 
 		/**
@@ -105,7 +105,7 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 		function options_page() {
 			?>
 			<div class="wrap sample-data" id="sync-post">
-				<h1><?php _e( 'Sample Data', 'sample-data' ); ?></h1>
+				<h1><?php _e( 'Site Demo Content', 'sample-data' ); ?></h1>
 				<p><?php _e( 'Simply click on the get started to import the dummy content..', 'sample-data' ); ?></p>
 				<hr>
 				<div class="wrap">
@@ -114,6 +114,27 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 							<div id="post-body-content">
 
 								<div id="importer-content">
+
+
+									<div class="themes">
+										<div class="grid">
+											<div class="item">
+												<div class="card-top">
+													<div class="name column-name">
+														<h3><?php _e( 'Sample Content', 'sample-data' ); ?></h3>
+													</div>
+													<div class="desc column-description">
+														<?php /* translators: %s is the link of theme unit test data. */ ?>
+														<p><?php esc_html_e( 'Import dummy posts, pages, comments etc.', 'sample-data' ); ?></p>
+														<p><a href='#' class="get-started" data-file="<?php echo esc_attr( SAMPLE_DATA_DIR . 'data\themeunittestdata.WordPress.xml' ); ?>"><i><?php _e( 'Import »', 'sample-data' ); ?></i></a></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<br class="clear">
+									<hr>
 
 									<div class="plugins">
 
@@ -160,29 +181,8 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 											</div>
 										</div>
 									</div>
-
-									<br class="clear">
-									<hr>
-
-									<div class="themes">
-										<h2 class="title"><?php _e( 'Theme', 'sample-data' ); ?></h2>
-
-										<div class="grid">
-											<div class="item">
-												<div class="card-top">
-													<div class="name column-name">
-														<h3><?php _e( 'Theme Unit Test', 'sample-data' ); ?></h3>
-													</div>										
-													<div class="desc column-description">
-														<?php /* translators: %s is the link of theme unit test data. */ ?>
-														<p><?php printf( __( 'For instructions on how to use the <a href="%s">Theme Unit Test</a>.', 'sample-data' ), 'https://codex.wordpress.org/Theme_Unit_Test' ); ?></p>
-														<p><a href='#' class="get-started" data-file="<?php echo esc_attr( SAMPLE_DATA_DIR . 'data\themeunittestdata.WordPress.xml' ); ?>"><i><?php _e( 'Get Started »', 'sample-data' ); ?></i></a></p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
 								</div>
+
 								<div id="importer-screen">
 									<div class="welcome-panel">
 										<div class="welcome-panel-content">

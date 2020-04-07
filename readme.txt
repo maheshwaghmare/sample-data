@@ -1,18 +1,18 @@
-=== Sample Data ===
+=== Site Demo Content ===
 Contributors: Mahesh901122
 Tags: dummy data, sample data, woocommerce dummy data, bbpress dummy data, theme unit test data
 Donate link: https://www.paypal.me/mwaghmare7/
-Tested up to: 5.2
-Stable tag: 1.1.0
+Tested up to: 5.4
+Stable tag: 1.1.1
 Requires at least: 4.4
 
-Download sample data of Theme Unit Test, WooCommerce, bbPress etc with one click.
+One click import demo content which includes post, pages, comments etc. Also, import demo content for different plugins such as WooCommerce, bbPress etc.
 
 == Description ==
 
-Download sample data of Theme Unit Test, WooCommerce, bbPress etc with one click.
+One click import demo content which includes post, pages, comments etc. Also, import demo content for different plugins such as WooCommerce, bbPress etc.
 
-Follow below simple steps to improt the dummy content:
+Follow below simple steps to import the dummy content:
 
 * Click on `Get Started »`
 * It read the file and get content.
@@ -25,7 +25,7 @@ Plugin import the data form the XML file. For now plugin added in-build support 
 * WooCommerce
 * bbPress
 
-Do you want another plugin support? [Request for support »](https://maheshwaghmare.wordpress.com/say-hello/)
+Do you want another plugin support? [Request for support »](https://maheshwaghmare.com/say-hello/)
 
 Do you know coding? Let's fork & extend from [Github](https://github.com/maheshwaghmare/sample-data/)
 
@@ -53,6 +53,9 @@ And plugins sample data which includes some popular plugins such as WooCommerce,
 Yes, But theme or plugin author have such sample data which we can include in our importer. Once they have provided such data then we will add it into our importer.
 
 == Changelog ==
+
+= 1.1.1 =
+* Improvement: Added compatibility for WordPress 5.4.
 
 = 1.1.0 =
 * New: Added filter `sample_data_action_links` to change the action links.
