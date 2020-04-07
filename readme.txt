@@ -2,8 +2,8 @@
 Contributors: Mahesh901122
 Tags: dummy data, sample data, woocommerce dummy data, bbpress dummy data, theme unit test data
 Donate link: https://www.paypal.me/mwaghmare7/
-Tested up to: 4.9.8
-Stable tag: 1.0.1
+Tested up to: 5.2
+Stable tag: 1.1.0
 Requires at least: 4.4
 
 Download sample data of Theme Unit Test, WooCommerce, bbPress etc with one click.
@@ -36,11 +36,30 @@ Do you know coding? Let's fork & extend from [Github](https://github.com/maheshw
 3. Select the `Get Started »` for Plugin/Theme.
 4. Click on `Start Import`.
 
+== Frequently Asked Questions ==
+
+= Is there any plan for Pro version? =
+
+Nope, For now We have not thinking about any pro plan for Sample Data plugin.
+
+= What kind of data I can import?
+
+We provides the sample data of Theme unit test which contain post, pages, attachments etc. Mostly this data is used for testing purpose. These data includes the different variations of the test cases.
+
+And plugins sample data which includes some popular plugins such as WooCommerce, BBPress etc.
+
+= Can I request for any theme/plugin sample data? =
+
+Yes, But theme or plugin author have such sample data which we can include in our importer. Once they have provided such data then we will add it into our importer.
 
 == Changelog ==
 
+= 1.1.0 =
+* New: Added filter `sample_data_action_links` to change the action links.
+* New: Added filter `sample_data_localize_vars` to change the localize variables.
+
 = 1.0.1 =
-* Used WooCommerce plugins directory XML file instead of custom XML file.
+* Fix: Used WooCommerce plugins directory XML file instead of custom XML file.
 
 = 1.0.0 =
 * Initial release.
