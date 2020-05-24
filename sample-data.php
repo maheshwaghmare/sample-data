@@ -5,7 +5,7 @@
  * Plugin URI: https://profiles.wordpress.org/mahesh901122/
  * Author: Mahesh M. Waghmare
  * Author URI: https://maheshwaghmare.com/
- * Version: 1.1.1
+ * Version: 1.1.2
  * License: GNU General Public License v2.0
  * Text Domain: sample-data
  *
@@ -13,7 +13,7 @@
  */
 
 // Set constants.
-define( 'SAMPLE_DATA_VER', '1.1.1' );
+define( 'SAMPLE_DATA_VER', '1.1.2' );
 define( 'SAMPLE_DATA_FILE', __FILE__ );
 define( 'SAMPLE_DATA_BASE', plugin_basename( SAMPLE_DATA_FILE ) );
 define( 'SAMPLE_DATA_DIR', plugin_dir_path( SAMPLE_DATA_FILE ) );
