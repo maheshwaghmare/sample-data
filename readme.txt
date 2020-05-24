@@ -3,7 +3,7 @@ Contributors: Mahesh901122
 Tags: dummy data, sample data, woocommerce dummy data, bbpress dummy data, theme unit test data
 Donate link: https://www.paypal.me/mwaghmare7/
 Tested up to: 5.4
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 Requires at least: 4.4
 
 One click import demo content which includes post, pages, comments etc. Also, import demo content for different plugins such as WooCommerce, bbPress etc.
@@ -17,13 +17,13 @@ Follow below simple steps to import the dummy content:
 * Click on `Get Started »`
 * It read the file and get content.
 * Click on Start Import.
-* For more details check [video tutorial](https://www.youtube.com/watch?v=q77CJDKAnmg)
+* For more details read the [getting started article](https://maheshwaghmare.com/doc/sample-data/) or see [video tutorial](https://www.youtube.com/watch?v=q77CJDKAnmg)
 
 Plugin import the data form the XML file. For now plugin added in-build support for:
 
-* Theme Unit Test Data
-* WooCommerce
-* bbPress
+* <a href="https://maheshwaghmare.com/doc/sample-data/#sample-content" target="_blank">Sample Content (post, page, images etc)</a>
+* <a href="https://maheshwaghmare.com/doc/sample-data/#woocommerce" target="_blank">WooCommerce</a>
+* <a href="https://maheshwaghmare.com/doc/sample-data/#sample-content" target="_blank">bbPress</a>
 
 Do you want another plugin support? [Request for support »](https://maheshwaghmare.com/say-hello/)
 
@@ -53,6 +53,9 @@ And plugins sample data which includes some popular plugins such as WooCommerce,
 Yes, But theme or plugin author have such sample data which we can include in our importer. Once they have provided such data then we will add it into our importer.
 
 == Changelog ==
+
+= 1.1.2 =
+* Improvement: Added the quick doc links.
 
 = 1.1.1 =
 * Improvement: Added compatibility for WordPress 5.4.
