@@ -148,7 +148,7 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 														<h3><a href="<?php echo admin_url( 'plugin-install.php?tab=plugin-information&plugin=woocommerce&TB_iframe=true&width=772&height=327' ); ?>" class="thickbox open-plugin-details-modal"><?php _e( 'WooCommerce', 'sample-data' ); ?></a></h3>
 													</div>
 													<div class="desc column-description">
-														<p><?php _e( 'WooCommerce is a powerful, extendable eCommerce plugin that helps you sell anything. Beautifully.', 'sample-data' ); ?></p>
+														<p><?php _e( 'WooCommerce is a flexible, open-source eCommerce solution built on WordPress.', 'sample-data' ); ?></p>
 														<?php if ( class_exists( 'WooCommerce' ) ) {
 															if( defined( 'WC_ABSPATH' ) ) {
 																$woo_xml_url = WC_ABSPATH . 'sample-data\sample_products.xml';
@@ -158,7 +158,7 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 															?>
 															<p><a href='#' class="get-started" data-file="<?php echo esc_attr( $woo_xml_url ); ?>"><i><?php _e( 'Get Started »', 'sample-data' ); ?></i></a></p>
 														<?php } else { ?>
-															<p><a href='<?php echo admin_url( 'plugin-install.php?s=woocommerce&tab=search&type=term', 'sample-data' ); ?>'><i><?php _e( 'Install & Activate »', 'sample-data' ); ?></i></a></p>
+															<p><a target="_blank" href='<?php echo admin_url( 'plugin-install.php?s=woocommerce&tab=search&type=term', 'sample-data' ); ?>'><i><?php _e( 'Install & Activate »', 'sample-data' ); ?></i></a></p>
 														<?php } ?>
 													</div>
 												</div>
@@ -167,14 +167,14 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 												<img src="https://ps.w.org/bbpress/assets/icon.svg?rev=978290">
 												<div class="card-top">
 													<div class="name column-name">
-														<h3><a href="<?php echo admin_url( 'plugin-install.php?tab=plugin-information&plugin=bbpress&TB_iframe=true&width=772&height=327' ); ?>" class="thickbox open-plugin-details-modal"><?php _e( 'bbPress.', 'sample-data' ); ?></a></h3>
+														<h3><a href="<?php echo admin_url( 'plugin-install.php?tab=plugin-information&plugin=bbpress&TB_iframe=true&width=772&height=327' ); ?>" class="thickbox open-plugin-details-modal"><?php _e( 'bbPress', 'sample-data' ); ?></a></h3>
 													</div>
 													<div class="desc column-description">
 														<p><?php _e( 'bbPress is forum software, made the WordPress way.', 'sample-data' ); ?></p>
 														<?php if ( class_exists( 'bbPress' ) ) { ?>
 															<p><a href='#' class="get-started" data-file="<?php echo esc_attr( SAMPLE_DATA_DIR . 'data\bbpress-unit-test-data.xml' ); ?>"><i><?php _e( 'Get Started »', 'sample-data' ); ?></i></a></p>
 														<?php } else { ?>
-															<p><a href='<?php echo admin_url( 'plugin-install.php?s=bbpress&tab=search&type=term', 'sample-data' ); ?>'><i><?php _e( 'Install & Activate »', 'sample-data' ); ?></i></a></p>
+															<p><a target="_blank" href='<?php echo admin_url( 'plugin-install.php?s=bbpress&tab=search&type=term', 'sample-data' ); ?>'><i><?php _e( 'Install & Activate »', 'sample-data' ); ?></i></a></p>
 														<?php } ?>
 													</div>
 												</div>
@@ -321,11 +321,11 @@ if ( ! class_exists( 'Sample_Data_Page' ) ) :
 									<div class="postbox">
 										<h2 class="hndle"><span><?php _e( 'Getting Started', 'sample-data' ); ?></span></h2>
 										<div class="inside">
-											<p><?php _e( 'Follow below simple steps to improt the dummy content:', 'sample-data' ); ?></p>
 											<ul>
-												<li><?php _e( 'Click on <i>Get Started »</i>', 'sample-data' ); ?></li>
-												<li><?php _e( 'It read the file and get content.', 'sample-data' ); ?></li>
-												<li><?php _e( 'Click on <i>Start Import</i>.', 'sample-data' ); ?></li>
+												<li><a href="http://maheshwaghmare.com/?p=19369">Overview</a></li>
+												<li><a href="http://maheshwaghmare.com/?p=19369">Sample Content</a></li>
+												<li><a href="http://maheshwaghmare.com/?p=19369">WooCommerce</a></li>
+												<li><a href="http://maheshwaghmare.com/?p=19369">bbPress</a></li>
 											</ul>
 											<p><?php _e( 'For more details check <a href="https://youtu.be/q77CJDKAnmg" target="_blank">video tutorial</a>', 'sample-data' ); ?></p>
 										</div>
